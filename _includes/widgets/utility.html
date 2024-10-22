@@ -1,0 +1,24 @@
+{% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
+
+<div class="my-3 bg-white shadow-sm rounded-sm">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-newspaper" ></i> Utilidad pública</h6>
+    <div class="px-3 pb-1">
+        
+        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+            {% assign not_first = true %}
+            
+            <div class="media-body">
+                
+                <div class="my-1 d-flex">
+                    En 2024-2 estoy organizando un mini Seminario de Estudiantes sobre Geometría Algebraica. Está orientado a gente sin conocimientos en el área. Veremos principalemte cositas de curvas algebraicas. Jueves a las 13:30 en la Sala 2.
+                </div>
+                <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+                    En octubre–noviembre de 2024 se realizará el Seminario de Teoría de Números de H. Pastén. Será sobre la Conjetura de Mordell Efectiva. Viernes a las 14:50 en la Sala 2.
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+

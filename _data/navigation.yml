@@ -1,0 +1,6 @@
+pages:
+- name: Home
+  url: /
+- name: Archivo de eventos
+  url: /archive
+
