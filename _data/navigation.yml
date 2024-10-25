@@ -1,5 +1,5 @@
 pages:
-- name: Home
+- name: Inicio
   url: /
 - name: Archivo de eventos
   url: /archive
