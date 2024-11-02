@@ -17,6 +17,9 @@ navbar_title: Home
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
     {% endif %}
 {% endif %}
+
+{% include widgets/activities.html %}
+
 {% include widgets/events.html %}
 
 {% if site.data.display.homepage.show_selected_publications %}

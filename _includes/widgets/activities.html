@@ -1,0 +1,24 @@
+{% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
+
+<div class="my-3 bg-white shadow-sm rounded-sm">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-feed" ></i> Actividades</h6>
+    <div class="px-3 pb-1">
+        
+        
+            
+            
+            <div class="media-body">
+                <div>
+                    En 2024-2 estoy co-organizando (??) el <a href="subsites/tcce.html">Seminario de Teoría de Cuerpos de Clases Explícita</a>. Miércoles de 14:00 a 16:00 en la Sala 2 del edificio Rolando Chuaqui de la PUC. 
+                </div>
+
+                <div class="border-top border-gray">
+                    En 2024-2 estoy organizando el <a href="subsites/sega.html">Seminario de Estudiantes sobre Geometría Algebraica</a>. Jueves a las 13:30 + $$\varepsilon$$ en la Sala 2 del edificio Rolando Chuaqui de la PUC.
+                </div>
+                
+            </div>
+       
+       
+    </div>
+</div>
+
