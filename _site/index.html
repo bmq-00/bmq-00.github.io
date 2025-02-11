@@ -66,7 +66,7 @@
                         </div>
                         <div class="text-profile-bio mt-3" >
                             <p>
- Soy estudiante de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, interesado en teoría de números y geometría algebraica.
+ Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en teoría de números, programación, y educación.
 </p>
                         </div>
                         
@@ -91,12 +91,16 @@
                 <hr />
                 <div class="row">
                     <div class="col">
-                        <a class="pr-3 no-break" href="mailto:%62%65%6E%6A%61%71%75%65%7A%61%64%61%6D@%75%63.%63%6C">
-                            <i class="fas fa-at"></i> <span class="email-text">benjaquezadam(at)uc.cl</span>
+                        <a class="pr-3 no-break" href="mailto:%71%6D%62.%6E%6C%6D@%67%6D%61%69%6C.%63%6F%6D">
+                            <i class="fas fa-at"></i> <span class="email-text">qmb.nlm(at)gmail.com</span>
                         </a>
 
                         
                         
+                        
+                        <a class="pr-3 no-break" target="_blank" href="https://github.com/https://github.com/bmq-00">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                         
 
                         
@@ -145,66 +149,31 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
 
 
 
-    
-    
-        <div class="my-3 bg-white shadow-sm rounded-sm">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-link"></i> Enlaces de interés</h6>
-    <div class="px-3 pb-1">
-        
-        <div class="media py-1 ">
-            
-            
-            <div class="media-body">
-                
-                <div class="my-1 d-flex">
-                    <a href="https://www.mat.uc.cl/~natalia.garcia/stn.html">Seminario de Teoría de Números UC</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="https://www.mat.uc.cl/~federico.castillo/santas.html">Santiago Number Theory and Algebra Seminar (SaNTAS)</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="https://www.mat.uc.cl/~urzua/">Geometría Algebraica en la UC</a>
-                </div>
-            </div>
-        </div>
-       
-    </div>
-</div>
-
-
-
-    
-
-
 <div class="my-3 bg-white shadow-sm rounded-sm">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-feed" ></i> Actividades</h6>
+    <h6 class="p-3 mb-0 border-bottom border-gray"> Proyecto: gráficos de conjuntos de Julia cuadráticos (2021)</h6>
     <div class="px-3 pb-1">
-        
-        
-            
-            
             <div class="media-body">
-                ...
-                
+               <p>La dinámica compleja estudia el comportamiento de funciones holomorfas $$f$$ definidas en alguna superficie de Riemann $$S$$. Un caso clásico es cuando $$S=\mathbb{C}$$ y $$f$$ es un polinomio cuadrático, que sin perder generalidad se puede escribir como $$f_c(z) := z^2 + c$$ para algún $$c\in \mathbb{C}$$. Dado $$x_0\in \mathbb{C}$$, podemos preguntar si es que la órbita $$\{f_c^{\circ n}(x_0)\}_{n\geq 0}$$ escapa o no a infinito, y a qué velocidad lo hace. Un teorema, el llamado Criterio de Escape, indica que si alguno de estos iterados tiene valor absoluto mayor que cierto threshold, entonces la órbita efectivamente se dispara a infinito.</p>
+
+               
+               <p>Un método gráfico estándar es para cada $$x_0\in \mathbb{C}$$, y para cada iterado de $$f_c(x_0)$$ verificar si su valor absoluto excede dicho threshold. De hacerlo, se colorea $$x_0$$ blanco, y de lo contrario, negro. La parte negra se llama el <em>conjunto de Julia lleno</em> de $$f$$, denotado $$\mathcal{K}_c$$. Una <a href="https://github.com/bmq-00/julia-mandelbrot-plotter">implementación rudimentaria <i class="fa-brands fa-github"></i> </a> con $$c=0.285 - 0.01i$$ de este método lleva a la siguiente imagen aproximada de $$\mathcal{K}_c$$:</p>
+
+                <div class="center">
+                    <img src="assets/images/b.jpeg" width=50%/>
+                </div>
+
+                <p>Esto nos permite visualizar qué puntos son atrapados en la órbita de $$f_c$$. Para poder ver la velocidad de escape, coloreamos de acuerdo a cuántas iteraciones el Criterio de Escape falla. Más explícitamente, a priori fijamos un $$N\in\mathbb{N}$$, nuestra <em>tolerancia</em> para el número de iteraciones. Si en algún momento hemos iterado sobre un mismo $$x_0$$ más de $$N$$ veces, o el valor absoluto de un iterado es mayor al radio de escape, dicho $$x_0$$ escapa y se le asigna el entero $$N$$; si la órbita escapa antes de llegar a $$N$$ iterados, le asignamos la cantidad de iterados que le tomó en escapar. Así, para cada $$x_0\in \mathbb{C}$$ tenemos un número entre $$0$$ y $$N$$ que lleva cuenta de cuánto demora un punto en escapar (relativo a $$N$$), que podemos normalizar (dividiendo por $$N$$), y por lo tanto asignar un bitmap. El mismo $$\mathcal{K}_c$$ anterior coloreado de acuerdo a este método (con el bitmap <code>turbo</code> de <code>matplotlib</code>) resulta en:</p>
+
+                <div class="center">
+                    <img src="assets/images/a.jpeg" width=50%/>
+                </div>
+                <br>
+                <p>En la figura, mientras más cálido el color, más lento escapa la órbita de $$f_c$$ en tal punto. A simple vista es evidente la autosimilitud de $$\mathcal{K}_c$$, y la presencia de regiones muy calientes, en cuyo corazón se encuentran los llamados <em>puntos atractores</em>, que terminarán por abosrber todas las órbitas que pasen suficientemente cerca de el.</p>
+
             </div>
-       
-       
     </div>
 </div>
 
-
-
-<div class="my-3 bg-white shadow-sm rounded-sm">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-calendar" ></i> Eventos</h6>
-    <div class="px-3 pb-1">
-        
-            <div class="media-body">
-               ...
-            </div>
-       
-       
-    </div>
-</div>
 
 
 
@@ -216,7 +185,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         <div class="row my-3">
             <div class="col-6">
                 <div class="text-muted">
-                    <i>Last updated: Jan 2025</i>
+                    <i>Last updated: Feb 2025</i>
                 </div>
             </div>
             <div class="col-6">

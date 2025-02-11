@@ -8,10 +8,10 @@ navbar_name: "bmq"
 #- name: Position 2 without logo
 
 
-email: "benjaquezadam@uc.cl"
+email: "qmb.nlm@gmail.com"
 cv_link: subsites/CV-esp.pdf
 #gscholar:   # This is an example, replace it with your own Google Scholar ID
-#github: 
+github:  "https://github.com/bmq-00"
 #twitter:   # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
@@ -22,7 +22,7 @@ cv_link: subsites/CV-esp.pdf
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Soy estudiante de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, interesado en teoría de números y geometría algebraica.
+   Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en teoría de números, programación, y educación.
   </p>
 
 portrait_url: /assets/images/photos/IMG_1282.jpg
