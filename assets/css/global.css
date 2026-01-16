@@ -97,7 +97,7 @@ table td:nth-child(4) {
 
 
 .diagram.compact .box text {
-  font-size: 12px;
+  font-size: 10px;
   dominant-baseline: middle;
 }
 
@@ -118,5 +118,35 @@ table td:nth-child(4) {
 
 .box-link {
   fill: currentColor;
+}
+
+svg.diagram {
+  /* nothing here */
+}
+
+svg.diagram .box rect {
+  fill: none !important;
+  stroke: black !important;
+}
+
+svg.diagram line {
+  stroke: black !important;
+}
+
+svg.diagram polygon {
+  fill: black !important;
+}
+svg.diagram .box text {
+  font-size: 12px !important;
+}
+
+svg.diagram .box.disabled rect {
+  fill: none !important;
+  stroke: #aaa !important;
+  stroke-width: 1.5;
+}
+
+svg.diagram .box.disabled text {
+  fill: #aaa !important;
 }
 
