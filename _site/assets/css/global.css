@@ -87,3 +87,36 @@ table td:nth-child(4) {
     margin-right: auto;
     text-align: center;
   }
+
+.diagram.compact .box rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+
+
+.diagram.compact .box text {
+  font-size: 12px;
+  dominant-baseline: middle;
+}
+
+.diagram.compact line,
+.diagram.compact polygon {
+  stroke: black;
+  stroke-width: 1;
+  fill: black;
+}
+
+.diagram.compact .box.disabled rect {
+  stroke: #aaa;
+}
+
+.diagram.compact .box.disabled text {
+  fill: #aaa;
+}
+
+.box-link {
+  fill: currentColor;
+}
+

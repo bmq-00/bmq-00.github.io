@@ -4,12 +4,12 @@ navbar_name: "bmq"
 
 #positions:
 #- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
- # name: Position 1 with logo
+ # name: Position 1 with logoa
 #- name: Position 2 without logo
 
 
-email: "bmacias@liceomurialdo.cl"
-cv_link: subsites/CV-esp.pdf
+email: "qmb.nlm@gmail.com"
+cv_link: subsites/CV.pdf
 #gscholar:   # This is an example, replace it with your own Google Scholar ID
 #github:  "https://github.com/bmq-00"
 #twitter:   # Do not include the '@' symbol
@@ -22,7 +22,7 @@ cv_link: subsites/CV-esp.pdf
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en Teoría de Números y Geometría Algebraica. Actualmente estoy trabajando como Profesor de Matemática en el <a href=https://www.liceomurialdo.cl> Liceo Leonardo Murialdo</a> en Santiago.
+   Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en Teoría de Números y Geometría Algebraica. Actualmente estoy estudiando en el Magíster en Matemática de la <a href=https://usach.cl>Universidad de Santiago</a>.
   </p>
 
 portrait_url: /assets/images/photos/IMG_1282.jpg

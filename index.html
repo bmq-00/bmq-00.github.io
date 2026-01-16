@@ -13,8 +13,6 @@ navbar_title: Home
 
 {% include widgets/apuntes.html %}
 
-{% include widgets/julia.html %}
-
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}

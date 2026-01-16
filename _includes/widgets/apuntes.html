@@ -2,39 +2,63 @@
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa-solid fa-pen"></i> Apuntes</h6>
-    <div class="px-3 pb-1">
-        
-        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
-            {% assign not_first = true %}
-            
-            <div class="media-body">
-                <h6 class="p-3 mb-0 border-bottom border-gray">Charlas</h6>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/sega24/bb9.pdf">Introducción a las superficies elípticas</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/sega24/bb1.pdf">Cónicas e intersecciones en $$\mathbb{P}^2$$</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/class-fields/ramifications.pdf">Ramificaciones</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/charlas/rational.pdf">Superficies elípticas racionales</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/charlas/silverman.pdf">Puntos enteros en órbitas de funciones racionales</a>
-                </div>
-                <div class="my-1 d-flex">
-                    <a href="subsites/docs/charlas/p-adics.pdf">Introducción a los números $$p$$-ádicos</a>
-                </div>
-                <h6 class="p-3 mb-0 border-bottom border-gray">Cursos</h6>
-                <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
-                    <a href="subsites/docs/courses/real.pdf">Análisis real (WIP)</a>
-                </div>
-            </div>
-        </div>
-       
-    </div>
+     <svg
+  viewBox="0 0 660 240"
+  width="100%"
+  height="240"
+  class="diagram compact"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- Cajas superiores -->
+  <g class="box disabled">
+    <rect x="20" y="20" width="180" height="45"  />
+    <text x="110" y="40" text-anchor="middle">
+      <tspan x="110" dy="0">Ecuaciones diferenciales</tspan>
+      <tspan x="110" dy="14">e integrales</tspan>
+    </text>
+  </g>
+
+  <g class="box">
+    <rect x="240" y="20" width="180" height="45"  />
+    <a href="/metric-spaces">
+  <text x="330" y="45" text-anchor="middle" class="box-link">
+    <a href="subsites/docs/courses/metric.pdf">Espacios métricos</a>
+  </text>
+</a>
+  </g>
+
+  <g class="box disabled">
+    <rect x="460" y="20" width="180" height="45"  />
+    <text x="550" y="45" text-anchor="middle">
+      Medida e integración
+    </text>
+  </g>
+
+  <!-- Conexiones -->
+  <line x1="110" y1="65" x2="110" y2="95" />
+  <line x1="330" y1="65" x2="330" y2="95" />
+  <line x1="550" y1="65" x2="550" y2="95" />
+
+  <line x1="110" y1="95" x2="550" y2="95" />
+
+  <line x1="330" y1="95" x2="330" y2="125" />
+  <polygon points="326,125 334,125 330,132" />
+
+  <!-- Caja inferior -->
+  <g class="box disabled">
+    <rect x="240" y="132" width="180" height="45"  />
+    <text x="330" y="157" text-anchor="middle">
+      Análisis funcional
+    </text>
+  </g>
+
+</svg>
 </div>
+
+
+
+
+
 
 
