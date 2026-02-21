@@ -150,3 +150,14 @@ svg.diagram .box.disabled text {
   fill: #aaa !important;
 }
 
+
+table.center {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: none;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}

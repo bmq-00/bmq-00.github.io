@@ -1,6 +1,6 @@
 pages:
-- name: Inicio
+- name: <i class="fa fa-home"></i> Inicio
   url: /
-- name: Archivo de eventos
+- name: Eventos de aritmética en Santiago
   url: /archive
 

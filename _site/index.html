@@ -26,11 +26,11 @@
             <ul class="navbar-nav ml-auto">
                 
                 <li class="nav-item ">
-                    <a class="nav-link" href="/">Inicio</a>
+                    <a class="nav-link" href="/"><i class="fa fa-home"></i> Inicio</a>
                 </li>
                 
                 <li class="nav-item ">
-                    <a class="nav-link" href="/archive">Archivo de eventos</a>
+                    <a class="nav-link" href="/archive">Eventos de aritmética en Santiago</a>
                 </li>
                 
             </ul>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="text-profile-bio mt-3" >
                             <p>
- Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en Teoría de Números y Geometría Algebraica. Actualmente estoy estudiando en el Magíster en Matemática de la <a href=https://usach.cl>Universidad de Santiago</a>.
+ Soy Licenciado de Matemática en la <a href=https://www.uc.cl>Pontificia Universidad Católica de Chile</a>, con interés en Teoría de Números y Geometría Algebraica. Actualmente estoy estudiando el Magíster en Matemática de la <a href=https://usach.cl>Universidad de Santiago</a>.
 </p>
                         </div>
                         
@@ -145,64 +145,41 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
 
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa-solid fa-pen"></i> Apuntes</h6>
-     <svg
-  viewBox="0 0 660 240"
-  width="100%"
-  height="240"
-  class="diagram"
-  xmlns="http://www.w3.org/2000/svg"
->
+  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa-solid fa-pen"></i> Apuntes (en progreso)</h6>
+  <div class="px-3 pb-1">
+    <div class="media-body">
+        <div><a href="subsites/docs/courses/number-fields.pdf">Algebraic number fields (ver. 2025)</a></div>  
+        <div><a href="subsites/docs/courses/metric.pdf">Análisis real (ver. 2024)</a></div>
+        <div><a href="subsites/docs/courses/varieties.pdf">Variedades algebraicas afines (ver. 2024)</a></div>      
+      </div>       
+    </div>
+  </div>
 
-  <!-- SVG content here -->
 
-
-  <!-- Cajas superiores -->
-  <g class="box disabled">
-    <rect x="20" y="20" width="180" height="45"  />
-    <text x="110" y="40" text-anchor="middle">
-      <tspan x="110" dy="0">Ecuaciones diferenciales</tspan>
-      <tspan x="110" dy="14">e integrales</tspan>
-    </text>
-  </g>
-
-  <g class="box">
-    <rect x="240" y="20" width="180" height="45"  />
-    <a href="/metric-spaces">
-  <text x="330" y="45" text-anchor="middle" class="box-link">
-    <a href="subsites/docs/courses/metric.pdf">Espacios métricos</a>
-  </text>
-</a>
-  </g>
-
-  <g class="box disabled">
-    <rect x="460" y="20" width="180" height="45"  />
-    <text x="550" y="45" text-anchor="middle">
-      Medida e integración
-    </text>
-  </g>
-
-  <!-- Conexiones -->
-  <line x1="110" y1="65" x2="110" y2="95" />
-  <line x1="330" y1="65" x2="330" y2="95" />
-  <line x1="550" y1="65" x2="550" y2="95" />
-
-  <line x1="110" y1="95" x2="550" y2="95" />
-
-  <line x1="330" y1="95" x2="330" y2="125" />
-  <polygon points="326,125 334,125 330,132" />
-
-  <!-- Caja inferior -->
-  <g class="box disabled">
-    <rect x="240" y="132" width="180" height="45"  />
-    <text x="330" y="157" text-anchor="middle">
-      Análisis funcional
-    </text>
-  </g>
-
-</svg>
+<div class="my-3 bg-white shadow-sm rounded-sm">
+  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa fa-comment"></i> Charlas</h6>
+  <div class="px-3 pb-1">
+    <div class="media-body">
+        <div><a href="subsites/docs/charlas/bb9.pdf">Introducción a las superficies elípticas</a></div>  
+        <div><a href="subsites/docs/charlas/plane-conics.pdf">Cónicas e intersecciones en $$\mathbb{P}^2$$</a></div>  
+        <div><a href="subsites/docs/charlas/ramification.pdf">Ramificación</a></div>  
+        <div><a href="subsites/docs/charlas/rational.pdf">Superficies elípticas racionales</a></div>  
+        <div><a href="subsites/docs/charlas/silverman.pdf">Teorema de Silverman sobre puntos enteros en órbitas de funciones racionales</a></div>  
+        <div><a href="subsites/docs/charlas/p-adics.pdf">Introducción a los números $$p$$-ádicos</a></div>     
+      </div>       
+    </div>
 </div>
 
+<div class="my-3 bg-white shadow-sm rounded-sm">
+  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa fa-calendar"></i> Actividades académicas</h6>
+  <div class="px-3 pb-1">
+    <div class="media-body">
+        <div>2024-2: <a href="subsites/sega.html">Seminario de Estudiantes de Geometría Algebraica</a></div>
+        <div>2024-2: <a href="subsites/tcce.html">Seminario de Estudiantes de Cociclos Meromorfos Rígidos</a></div>
+        <div>2020–2023: <a href="subsites/sep.html">Seminario de Estudiantes de Pregrado</a></div>  
+      </div>       
+    </div>
+</div>
 
 
 
@@ -220,7 +197,7 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         <div class="row my-3">
             <div class="col-6">
                 <div class="text-muted">
-                    <i>Last updated: Jan 2026</i>
+                    <i>Last updated: Feb 2026</i>
                 </div>
             </div>
             <div class="col-6">
