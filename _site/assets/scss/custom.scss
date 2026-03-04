@@ -1,0 +1,18 @@
+/* Deep rounded corners for cards */
+.my-3.bg-white.shadow-sm {
+    border-radius: 24px !important; /* The Apple "Sweet Spot" */
+    overflow: hidden;              /* Clips content to the new corners */
+    border: 1px solid rgba(0,0,0,0.05); /* Subtle border for definition */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional: Add a soft "Apple-like" lift on hover */
+.my-3.bg-white.shadow-sm:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.my-3.bg-white.shadow-sm img {
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+}

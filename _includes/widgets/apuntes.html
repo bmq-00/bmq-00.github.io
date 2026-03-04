@@ -1,7 +1,7 @@
 {% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
-  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa-solid fa-pen"></i> Apuntes (en progreso)</h6>
+  <h5 class="p-3 mb-0"><i class="fa-solid fa-pen"></i> Apuntes (en progreso)</h5>
   <div class="px-3 pb-1">
     <div class="media-body">
         <div><a href="subsites/docs/courses/number-fields.pdf">Algebraic number fields (ver. 2025)</a></div>  
@@ -12,8 +12,8 @@
   </div>
 
 
-<div class="my-3 bg-white shadow-sm rounded-sm">
-  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa fa-comment"></i> Charlas</h6>
+<div class="my-3 bg-white shadow-sm rounded-sm ">
+  <h5 class="p-3 mb-0"><i class="fa fa-comment"></i> Charlas</h5>
   <div class="px-3 pb-1">
     <div class="media-body">
         <div><a href="subsites/docs/charlas/bb9.pdf">Introducción a las superficies elípticas</a></div>  
@@ -27,11 +27,11 @@
 </div>
 
 <div class="my-3 bg-white shadow-sm rounded-sm">
-  <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa fa-calendar"></i> Actividades académicas</h6>
+  <h5 class="p-3 mb-0"><i class="fa fa-calendar"></i> Actividades académicas</h5>
   <div class="px-3 pb-1">
     <div class="media-body">
         <div>2024-2: <a href="subsites/sega.html">Seminario de Estudiantes de Geometría Algebraica</a></div>
-        <div>2024-2: <a href="subsites/tcce.html">Seminario de Estudiantes de Cociclos Meromorfos Rígidos</a></div>
+        <div>2024-2: <a href="subsites/tcce.html">Seminario de Cociclos Meromorfos Rígidos</a></div>
         <div>2020–2023: <a href="subsites/sep.html">Seminario de Estudiantes de Pregrado</a></div>  
       </div>       
     </div>

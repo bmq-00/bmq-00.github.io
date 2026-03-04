@@ -161,3 +161,43 @@ table.center {
   display: flex;
   justify-content: center;
 }
+/* Target the specific combination of classes you mentioned */
+div.my-3.bg-white.shadow-sm.rounded-sm {
+    border-radius: 28px !important; /* Aggressive Apple-style rounding */
+    overflow: hidden !important;    /* Critical: clips content to the curves */
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* If there is an image at the top of the card, round its top corners too */
+div.my-3.bg-white.shadow-sm.rounded-sm img {
+    border-top-left-radius: 28px !important;
+    border-top-right-radius: 28px !important;
+}
+
+div.card.border-0.shadow-sm.bg-white{
+border-radius: 28px !important;
+}
+html, body {
+    height: auto !important;
+    min-height: 100% !important;
+    position: relative !important; /* This is the anchor for the donuts */
+}
+
+/* 1. Make the star pattern float above the background but BEHIND the content */
+#star-pattern {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    min-height: 100vh !important; /* At least as tall as the screen */
+    height: 103% !important;      /* But stretches to fit long content */
+    z-index: -1 !important; 
+    background-image: url('../images/dona.png') !important;
+    background-repeat: repeat !important;
+    pointer-events: none !important;
+    display: block !important; /* Ensures it's not hidden by a 'display: none' somewhere */
+}
+
+
+
