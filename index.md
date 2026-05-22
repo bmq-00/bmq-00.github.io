@@ -11,7 +11,7 @@ Mi correo es benjamin.macias.q[at]usach.cl
 ---
 
 ## Actividades académicas
- 2024-2: [Seminario de Estudiantes de Geometría Algebraica]({{ '/activities/sega.html' | relative_url }}) 
+ 2024-2: [Seminario de Estudiantes de Geometría Algebraica](/activities/sega.html) 
 
  2024-2: [Seminario de Cociclos Meromorfos Rígidos](/activities/stcce.html)
 

@@ -1,6 +1,6 @@
 title: Benjamín Macías
-url: "/bmq-00.github.io"
-baseurl: "https://bmq-00.github.io"
+url: "https://bmq-00.github.io"
+baseurl: ""
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
