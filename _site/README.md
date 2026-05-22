@@ -1,59 +1,60 @@
-# academic-homepage
+# Researcher
 
-![Preview](assets/images/etc/preview.png)
+### [Demo Website](http://ankitsultana.com/researcher)
 
-[![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
-[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)](https://validator.nu/?doc=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fluost26%2Facademic-homepage&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
-[![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/fork)
+A clean, single column, monospace resume template built for jekyll
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost.me/academic-homepage/) to see the demo.
+### Installation
 
-## User Community
+Simply fork the repository and edit away.
 
-[:star:](https://luost.me/)
-[:star:](https://cch1999.github.io/)
-[:star:](https://kyrrego.github.io/)
-[:star:](https://ced3-han.github.io/)
-[:star:](https://lihengchen.com/)
-[:star:](https://hpwang-whu.github.io/)
-[:star:](https://zhang-yingyi.github.io/)
-[:star:](https://wby24.github.io/)
-[:star:](https://pengfeixu.com/)
-[:star:](https://boqiuphd.github.io/)
+#### Installation via remote themes
 
-:hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
+* Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how
+you would build your site locally for testing. If you know how, open up an issue and let me know.
+* For more info, [refer this](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/).
 
+### Customization
 
-## Need Help?
+* You can edit the `.md` (markdown) files as you see fit. You can also add some other markdown file, say `foo.md` in the root directory of the repository. It will then be accessible like so `{{ url of your website }}/foo`.
 
-If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
+* You can of course remove `contact.md` if you don't want it
 
+* To set the heading, edit the `title` variable in `_config.yml`
 
-## Getting Started
+* To edit the `links` mentioned on the navigation bar, you can edit `_config.yml`. For example:
 
-1. First, fork this repository or click the "Use this template" button to create a new repository. The name of the repository should be `<your-github-username>.github.io` (click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) to learn more about naming a GitHub Pages repository).
-   - If you plan to customize the functionality or style of the template, and do not want to get updates from this repository, choose "Use this template".
-   - If you plan to only edit the content (biography, publications, news, etc.), and would like to get updates from this repository, choose "Fork".
-   - If you want to contribute to this project, fork the repository and submit a pull request.
+```
+nav:
+ - name: "About"
+   link: "/researcher/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
+```
 
-### Deploying to GitHub Pages
+* You can change the accent (color of hyperlinks) by editing the `accent` variable in `_sass/vars.scss`
 
-2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+* You can setup google analytics, by setting `tracking_id` in `_config.yml`
 
-3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
+* To add a profile picture, make sure to give the image tag the class `profile-picture`. In other words,do it like so:
 
-### Running Locally
+```html
+<img class="profile-picture" src="sherlock.jpg">
+```
 
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
+* You can remove/customize the footer as you like by setting the
+appropriate variables in `_config.yml`
 
-3. Clone your forked repository to your local machine.
+* (New in v1.2.0) You can add institute logo at the top, by setting `ins_logo` in `_config.yml`. If you want
+to adjust the logo's size, try setting `max-height` in `#ins-logo` in file `./_sass/_style.scss` to the desired
+value
 
-4. Run the following command in the root directory of the repository:
+![Institute Logo Image Sample](https://github.com/ankitsultana/assets/raw/master/ins-logo-sample.png)
 
-   ```bash
-   bundle exec jekyll serve
-   ```
+**Note:** Customizing the accent color might cause merge conflicts if you later try to merge from `bk2dcradle/researcher` to fetch updates/patches etc. (applicable only if you have forked).
 
-5. Browse to the displayed URL to see the website.
+### License
+
+[GNU GPL v3](https://github.com/bk2dcradle/researcher/blob/gh-pages/LICENSE)
